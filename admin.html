@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Admin</title>
+</head>
+
+<body>
+
+    <aside class="admin-content d-flex">
+
+        <div class="sidebar ">
+            <ul class="d-flex flex-column">
+                <h1><a href="#"><img src="./image/logo-ANSWER.svg" alt="ANSWER"></a></h1>
+                <li><a href="#"><i class="material-icons">insert_chart</i>Dashboard</a></li>
+                <li><a href="#"><i class="material-icons">forum</i>Question</a></li>
+                <li><a href="admin-assignment.html"><i class="material-icons">assignment</i>Assignment</a></li>
+                <li><a href="#"><i class="material-icons">video_library</i>Course</a></li>
+                <li><a href="#"><i class="material-icons">supervisor_account</i>Admin</a></li>
+                <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+            </ul>
+            <div class="media media-img my-4">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                    class="mr-3" alt="...">
+                <span class="font-weight-bold">Andy Chen <br>
+                    <p class="font-weight-normal">andy0401@mail.com</p>
+                </span>
+            </div>
+        </div>
+
+        </div>
+        <div class="pic">
+
+        </div>
+    </aside>
+    <main class="main-content">
+        <!-- 上方選擇單 -->
+        <nav class="search-bar">
+            <ul class="coturses-inside admin-title">
+                <li class="d-flex">
+                    <h3 class="pt-1 mr-1">Admin</h3>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                        <span class="material-icons more-icons ">add</span>
+                        <span class="admin-title-sm"> Add New Admin</span>
+                    </button>
+                </li>
+
+                <li class="search-icon pt-2">
+                    <a href="#"> <span class="material-icons text-dark">search</span></a>
+                    <a href="#"><span class="material-icons text-dark">notifications_active</span></a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="table-Admin-container pt-3 mb-5">
+            <table class="table table-hover pt-3 ">
+                <thead class="table-Admin text-left">
+                    <tr>
+                        <th class="border-top-0" scope="col">ID<span
+                                class="material-icons more-icons">arrow_downward</span></th>
+                        <th class="border-top-0" scope="col">Name</th>
+                        <th class="border-top-0" scope="col">Email</th>
+                        <th class="border-top-0" scope="col">Verified</th>
+                        <th class="border-top-0" scope="col"></th>
+                        <th class="border-top-0" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="table-body text-left">
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#1</th>
+                        <td>Emir Wicks</td>
+                        <td>emir.wicks@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#2</th>
+                        <td>Zaina Goldsmith</td>
+                        <td>zaina.goldsmith@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#3</th>
+                        <td>Mahima Lopez</td>
+                        <td>Mahima.Lopez@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#4</th>
+                        <td>Pharrell Murray</td>
+                        <td>Pharrell.Murray@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#5</th>
+                        <td>Annika Mcbride</td>
+                        <td>Annika.Mcbride@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#6</th>
+                        <td>Fatimah Clark</td>
+                        <td>Fatimah.Clark@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#7</th>
+                        <td>Klaudia Rhodes</td>
+                        <td>Klaudia.Rhodes@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#8</th>
+                        <td>Tillie Lucero</td>
+                        <td>Tillie.Lucero@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#9</th>
+                        <td>Sabrina Stephenson</td>
+                        <td>Sabrina.Stephenson@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="font-weight-bold" scope="row">#10</th>
+                        <td>Annie Smith</td>
+                        <td>Annie.Smith@mail.com</td>
+                        <td>Yes</td>
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa2">
+                                <span class="material-icons">
+                                    remove_red_eye
+                                </span>
+                            </button>
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModa3">
+                                <span class="material-icons">
+                                    create
+                                </span>
+                            </button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 分頁 -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-end page-admin ">
+                <li class="page-item px-1">
+                    <a href="#"><span class="material-icons more-icons pt-2"> chevron_left </span></a>
+                    </a>
+                </li>
+                <li class="page-item "><a class="page-link page-link-a" href="#">1</a></li>
+                <li class="page-item "><a class="page-link page-link-a" href="#">2</a></li>
+                <li class="page-item "><a class="page-link page-link-a"" href=" #">3</a></li>
+                <li class="page-item px-1">
+                    <a href="#"><span class="material-icons more-icons  pt-2"> chevron_right </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </main>
+    <!-- Modal -->
+    <!-- 新增 -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-bg add-admin">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <h2 class="modal-title" id="exampleModalLabel">New Admin</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body add-admin p-3">
+                    <h4 class="mb-2">Account</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                    </form>
+                    <hr>
+                    <h4 class="mb-2">Verification</h4>
+                    <div class="unverified"> <span class="material-icons warning">warning</span><span
+                            class="ml-3">Unverified</span>
+                    </div>
+                    <div class="verification">
+                        <button type="button" class="btn btn-lg btn-block">Send Verification Mail</button>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <h4 class="mb-3" for="exampleFormControlSelect1">Access Level</h4>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>-Choose access level-</option>
+                            <option>-Choose access level-</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <h2 class="mb-3">Custom Access</h2>
+                    <div class="custom-control custom-checkbox">
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label checkbox-admin" for="customCheck1"><span
+                                    class="checkbox-txt">lecture</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label checkbox-admin" for="customCheck2">
+                                <span class="checkbox-txt">Coupon</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label checkbox-admin" for="customCheck3"> <span
+                                    class="checkbox-txt">Message</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label checkbox-admin" for="customCheck4"> <span
+                                    class="checkbox-txt">Setting</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label checkbox-admin" for="customCheck5"> <span
+                                    class="checkbox-txt"> Check this custom checkbox</span></label>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="smbtnline">
+                        <button type="button " class="btn " data-dismiss="modal">Cancel</button>
+                    </div>
+
+                    <div class="modal-smbtn">
+                        <button type="button" class="btn">Add</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- 檢視照片 -->
+    <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-between">
+                    <div class="modal-pic">
+                        <img src=" https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true"
+                            alt="">
+                    </div>
+
+                    <div class="modal-pic-txt">
+                        <p>#1</p>
+                        <p>Admin</p>
+                        <p>Emir Wicks</p>
+                        <p>emir.wicks@mail.com</p>
+                        <p class="d-flex justify-content-between"><span class="verified">
+                                verified
+                            </span>
+                            <span class="material-icons more-icons  type=" button" data-toggle="collapse"
+                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"">expand_more</span></p>
+                    </div>
+                    
+
+                </div>
+                <div class=" d-flex justify-content-end btn-eyes mr-3 mb-3 ">
+                                <div class=" collapse" id="collapseExample">
+                                <button type="button " class="btn" data-dismiss="modal">Deactivate</button>
+                                <button type="button" class="btn  ml-2">Edit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <!-- 修改 -->
+    <div class="modal fade " id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-bg add-admin">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <h2 class="modal-title" id="exampleModalLabel">Edit Admin </h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body add-admin">
+                    <h4 class="mb-2">Account</h4>
+                    <form>
+                        <div class="form-group edit-admin">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Emir Wicks">
+                        </div>
+                        <div class="form-group edit-admin mb-3">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="emir.wicks@mail.com">
+                        </div>
+                    </form>
+                    <hr>
+                    <h4 class="mb-2">Verification</h4>
+                    <div class="unverified d-flex justify-content-between">
+                        <div>
+                            <span class="material-icons more-icons"> check_circle</span><span
+                                class="ml-3">Unverified</span>
+                        </div>
+                        <div>
+                            <p>2020/4/12</p>
+                        </div>
+                    </div>
+                    <div class="verification ">
+                        <button type="button" class="btn btn-lg btn-block">Send Verification Mail</button>
+
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <h4 class="mb-3" for="exampleFormControlSelect1">Access Level</h4>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Admin</option>
+                            <option>Admin1</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <h2 class="mb-3">Custom Access</h2>
+                    <div class="custom-control custom-checkbox">
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label checkbox-admin" for="customCheck6"><span
+                                    class="checkbox-txt">lecture</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck7">
+                            <label class="custom-control-label checkbox-admin" for="customCheck7">
+                                <span class="checkbox-txt">Coupon</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck8">
+                            <label class="custom-control-label checkbox-admin" for="customCheck8"> <span
+                                    class="checkbox-txt">Message</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck9">
+                            <label class="custom-control-label checkbox-admin" for="customCheck9"> <span
+                                    class="checkbox-txt">Setting</span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="custom-control-input" id="customCheck10">
+                            <label class="custom-control-label checkbox-admin" for="customCheck10"> <span
+                                    class="checkbox-txt"> Check this custom checkbox</span></label>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4 class="mb-2">Deactivate Account</h4>
+                    <div class="unverified warning"> <span class="material-icons warning">warning</span><span
+                            class="ml-3">This cannot be undone!</span>
+                    </div>
+                    <div class="Deactivate ">
+                        <button type="button" class="btn btn-lg btn-block">Deactivate This Account</button>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="smbtnline">
+                        <button type="button " class="btn " data-dismiss="modal">Cancel</button>
+                    </div>
+
+                    <div class="modal-smbtn">
+                        <button type="button" class="btn">Update</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+
+</html>
